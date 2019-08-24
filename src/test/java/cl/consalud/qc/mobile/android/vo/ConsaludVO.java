@@ -2,10 +2,11 @@ package cl.consalud.qc.mobile.android.vo;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import cl.consalud.qc.mobile.android.helpers.Helper;
-
+// Usuario y Pass para ingresar a App Consalud
 public class ConsaludVO {
 	private String user;
 	private String pass;
+	
 	
 public ConsaludVO(String rutaExcel, String hoja) {
 
