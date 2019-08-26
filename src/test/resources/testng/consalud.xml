@@ -33,12 +33,13 @@
 					<!--<include name="homeExcedentes" />--> 
 					<!--<include name="homeNotificaciones" />-->
 					<!--<include name="homeBolsaCompra" />-->
-					<!--	<include name="homeSolicitudes" />-->
-					<!--	<include name="homeSolFinalizadas" />-->
-					<!--	<include name="homeReembolso" /> -->
-						<include name="homeCertificados" /> 
-					<!--	<include name="homeBonos" /> -->
-						<include name="homeTeOrientamos" /> 
+					<!--<include name="homeSolicitudes" />-->
+					<!--<include name="homeSolFinalizadas" />-->
+					<!--<include name="homeReembolso" /> -->
+					<!--<include name="homeCertificados" /> --> 
+					<!--<include name="homeBonos" /> -->
+					<!--<include name="homeTeOrientamos" />  -->
+					<!--<include name="homeMenu" />  -->
 				</methods>
 			</class>
 		</classes>

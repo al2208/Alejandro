@@ -54,16 +54,20 @@ public Home (AndroidDriver<AndroidElement> driver, ExtentTest test, Boolean TAKE
 
 public void homeExcedentes (String subDir) {
 	
+	
+	//Ingresar a sección de Excedentes
 	driver.findElement(excedentes).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOTRELLO: Ingresar Descripcion", subDir, "Paso 31_AUTT-031");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOTRELLO: Ingresar Sección Excedentes", subDir, "Exced 1_APPC-01");
 	Helper.waitSeconds(2);
 	
+	//Selleccionar forma de abrir documento y Visualizar 
 	driver.findElement(abrirPdf).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOTRELLO: Ingresar Descripcion", subDir, "Paso 31_AUTT-031");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOTRELLO: Seleccionar y visualizar PDF", subDir, "Exced 2_APPC-02");
 	Helper.waitSeconds(2);
 	
+	//Volver a Home de APP Consalud
 	driver.findElement(volverHome).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOTRELLO: Ingresar Descripcion", subDir, "Paso 31_AUTT-031");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOTRELLO: Volver a Home APP", subDir, "Exced 3_APPC-03");
 	Helper.waitSeconds(2);
 	
 	}

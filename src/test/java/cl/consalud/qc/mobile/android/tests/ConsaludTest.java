@@ -18,6 +18,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import cl.consalud.qc.mobile.android.pages.Home;
 import cl.consalud.qc.mobile.android.pages.LoginConsalud;
+import cl.consalud.qc.mobile.android.pages.MenuConsalud;
 import cl.consalud.qc.mobile.android.vo.ConsaludVO;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -39,7 +40,7 @@ public void configExtentReports(String suite) {
 		// ExtentReports config
 	this.SUBDIR = suite + "\\";
 	this.extent = new ExtentReports("ExtentReports/" + suite + ".html", true);
-	this.extent.addSystemInfo("Host Name", "Tecnova Soluciones Informaticas SA");
+	this.extent.addSystemInfo("Host Name", "Isapre Consalud");
 	this.extent.addSystemInfo("Enviroment", "Automation Testing");
 	this.extent.addSystemInfo("User Name", "Alejandro Ascencio");
 
@@ -81,7 +82,7 @@ public void loginConsalud(String ruta_excel, String hoja) {
 	String subDir = SUBDIR + Thread.currentThread().getStackTrace()[1].getMethodName();
 
 		// Configuracion de reporte.
-	test = extent.startTest("Reporte Ingreso Consalud", "Prueba 01");
+	test = extent.startTest("Reporte Ingreso APP Consalud", "Login APP CONSALUD");
 	test.log(LogStatus.INFO, "Inicio Login en Consalud.-");
 
 	System.out.println("Prueba de Ingreso Correcto a Consalud");
@@ -211,6 +212,20 @@ public void homeTeOrientamos () {
 	System.out.println("Prueba de Ingreso Correcto a Home-Te Orientamos");
 	Home orientar = new Home (driver, test, TAKE_SS, WAIT);
 	orientar.homeTeOrientamos(subDir);	
+	
+	}
+
+@Test
+public void homeMenu () {
+	String subDir = SUBDIR + Thread.currentThread().getStackTrace()[1].getMethodName();
+	
+	// Configuracion de reporte.
+	test = extent.startTest("Reporte Ingreso Menú Lateral", "Prueba 01");
+	test.log(LogStatus.INFO, "Ingreso Home-Menú Lateral.-");
+	
+	System.out.println("Prueba de Ingreso correcto a Menú Lateral de App Consalud");
+	MenuConsalud menu = new MenuConsalud (driver, test, TAKE_SS, WAIT);
+	menu.homeMenu(subDir);	
 	
 	}
 
