@@ -220,8 +220,8 @@ public void homeMenu () {
 	String subDir = SUBDIR + Thread.currentThread().getStackTrace()[1].getMethodName();
 	
 	// Configuracion de reporte.
-	test = extent.startTest("Reporte Ingreso Menú Lateral", "Prueba 01");
-	test.log(LogStatus.INFO, "Ingreso Home-Menú Lateral.-");
+	test = extent.startTest("Reporte Ingreso Menu Lateral");
+	test.log(LogStatus.INFO, "Ingreso Home-Menu Lateral.-");
 	
 	System.out.println("Prueba de Ingreso correcto a Menú Lateral de App Consalud");
 	MenuConsalud menu = new MenuConsalud (driver, test, TAKE_SS, WAIT);

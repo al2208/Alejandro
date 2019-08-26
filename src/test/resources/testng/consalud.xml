@@ -39,7 +39,7 @@
 					<!--<include name="homeCertificados" /> --> 
 					<!--<include name="homeBonos" /> -->
 					<!--<include name="homeTeOrientamos" />  -->
-					<!--<include name="homeMenu" />  -->
+					<include name="homeMenu" />
 				</methods>
 			</class>
 		</classes>

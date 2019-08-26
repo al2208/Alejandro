@@ -76,12 +76,12 @@ public void homeNotificaciones (String subDir) {
 	
 	//Ingresar a Sección Notificaciones
 	driver.findElement(notificaciones).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Ingresar Notificaciones", subDir, "Notif 1_APPC-01");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para ingresar a Notificaciones", subDir, "Notif 1_APPC-01");
 	Helper.waitSeconds(2);
 	
-	//Volver a Home de APP Consalud
+	//Visualizar Pantalla Notificaciones y Volver a Home de APP Consalud
 	driver.findElement(volverNotificaciones).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Volver a Home APP", subDir, "Notif 2_APPC-02");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Visualizar Notificaciones", subDir, "Notif 2_APPC-02");
 	Helper.waitSeconds(2);
 	
 	
@@ -91,13 +91,13 @@ public void homeBolsaCompra (String subDir) {
 	
 	//Ingresar a Bolsa de Compra en Home
 	driver.findElement(bolsaCompra).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Ingresar a Bolsa de Compra", subDir, "BolsaC 01_APPC-01");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para Ingresar a Bolsa de Compra", subDir, "BolsaC 01_APPC-01");
 	Helper.waitSeconds(2);
 	
 	
-	//Volver a Home de APP Consalud
+	//Visualizar pantalla Bolsa de Compras y Volver a Home de APP Consalud
 	driver.findElement(volverBolsaCompra).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Volver a Home APP", subDir, "BolsaC 02_APPC-02");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Visualizar Bolsa de Compras", subDir, "BolsaC 02_APPC-02");
 	Helper.waitSeconds(2);
 	
 	}
@@ -106,7 +106,7 @@ public void homeSolicitudes (String subDir) {
 	
 	//Ingreso a Mis Solicitudes
 	driver.findElement(misSolicitudes).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Ingresar Mis Solicitudes", subDir, "Solic 01_APPC-01");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para Ingresar Mis Solicitudes ", subDir, "Solic 01_APPC-01");
 	Helper.waitSeconds(2);
 	
 	}
@@ -115,7 +115,7 @@ public void homeSolFinalizadas (String subDir) {
 	
 	//Ingreso a Mis Solicitudes Finalizdas
 	driver.findElement(misSolicitudesFinalizadas).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Ingresar Mis Solicitudes Finalizadas", subDir, "SolFin 01_APPC-01");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para Ingresar Mis Solicitudes Finalizadas", subDir, "SolFin 01_APPC-01");
 	Helper.waitSeconds(2);
 	
 	}
@@ -123,14 +123,14 @@ public void homeSolFinalizadas (String subDir) {
 public void homeReembolso (String subDir) {
 	
 	
-	//Ingreso a Reembolso
+	//Click para Ingresar a Reembolso
 	driver.findElement(reembolso).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Ingresar a Reembolso", subDir, "REEM 01_APPC-01");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para Ingresar a Reembolso", subDir, "REEM 01_APPC-01");
 	Helper.waitSeconds(2);
 	
-	//Volver a Home de APP Consalud
+	//Visualizar Pantalla Reembolso y Volver a Home de APP Consalud
 	driver.findElement(volverDeReembolso).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Volver a Home APP", subDir, "REEM 02_APPC-02");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Visualizar Pantalla Reembolso", subDir, "REEM 02_APPC-02");
 	Helper.waitSeconds(2);
 	
 	}
@@ -139,12 +139,12 @@ public void homeCertificados (String subDir) {
 	
 	//Ingreso a Certifcados
 	driver.findElement(certificados).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Ingresar a Certifcados", subDir, "Certi 01_APPC-01");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para Ingresar a Certifcados", subDir, "Certi 01_APPC-01");
 	Helper.waitSeconds(2);
 	
-	//Volver a Home de APP Consalud
+	//Visualizar Pantalla Certificados y Volver a Home de APP Consalud
 	driver.findElement(volverDeCertificados).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Volver a Home APP", subDir, "Certi 02_APPC-02");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Visualizar Pantalla Certificados", subDir, "Certi 02_APPC-02");
 	Helper.waitSeconds(2);
 	
 	}
@@ -153,12 +153,12 @@ public void homeBonos (String subDir) {
 	
 	//Ingresar a Bonos
 	driver.findElement(bonos).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Ingresar a Bonos", subDir, "Bono 01_APPC-01");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para Ingresar a Bonos", subDir, "Bono 01_APPC-01");
 	Helper.waitSeconds(2);
 	
-	//Volver a Home de APP Consalud
+	//Visualizar Pantalla Bonos yVolver a Home de APP Consalud
 	driver.findElement(volverDeBonos).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Volver a Home APP", subDir, "Bono 02_APPC-02");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Visualizar pantalla Bonos", subDir, "Bono 02_APPC-02");
 	Helper.waitSeconds(2);
 	
 	}
@@ -167,12 +167,12 @@ public void homeTeOrientamos (String subDir) {
 	
 	//Ingresar a Te Orientamos de Home Consalud
 	driver.findElement(teOrientamos).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Ingresar Te Orientamos", subDir, "Orienta 01_APPC-01");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para Ingresar a Te Orientamos", subDir, "Orienta 01_APPC-01");
 	Helper.waitSeconds(2);
 	
-	//Volver a Home de APP Consalud
+	//Visualizar pantalla Te Orientamos y Volver a Home de APP Consalud
 	driver.findElement(volverHomeDos).click();
-	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Ingresar Descripcion", subDir, "Orienta 02_APPC-02");
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Visualizar pantalla Te Orientamos", subDir, "Orienta 02_APPC-02");
 	Helper.waitSeconds(2);
 	
 	}
