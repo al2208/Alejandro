@@ -84,9 +84,14 @@ public void loginConsalud(String ruta_excel, String hoja) {
 		// Configuracion de reporte.
 	test = extent.startTest("Reporte Ingreso APP Consalud", "Login APP CONSALUD");
 	test.log(LogStatus.INFO, "Inicio Login en Consalud.-");
-
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando
 	System.out.println("Prueba de Ingreso Correcto a Consalud");
+	
+	//Llamado desde la Clase ConsaludVO para ejecutar parametros de acceso a APP Consalud
 	ConsaludVO param = new ConsaludVO (ruta_excel, hoja);
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Home
 	LoginConsalud login = new LoginConsalud (driver, test, TAKE_SS, WAIT);
 	login.ingresar(param.getUser(), param.getPass(),  subDir);
 	//login.assertLoginCorrecto();	
@@ -99,7 +104,10 @@ public void homeExcedentes () {
 	test = extent.startTest("Reporte Excedentes", "Prueba 01");
 	test.log(LogStatus.INFO, "Ingreso Home-Excedentes.-");
 	
+	//Print en Consola para visualizar prueba que se esta ejecutando
 	System.out.println("Prueba de Ingreso Correcto a Home-Excdentes");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Home
 	Home excedent = new Home (driver, test, TAKE_SS, WAIT);
 	excedent.homeExcedentes(subDir);
 	}
@@ -112,7 +120,10 @@ public void homeNotificaciones () {
 	test = extent.startTest("Reporte Notoficaciones", "Prueba 01");
 	test.log(LogStatus.INFO, "Ingreso Home-Notificaciones.-");
 	
+	//Print en Consola para visualizar prueba que se esta ejecutando
 	System.out.println("Prueba de Ingreso Correcto a Home-Notificaciones");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Home
 	Home notas = new Home (driver, test, TAKE_SS, WAIT);
 	notas.homeNotificaciones(subDir);
 	}
@@ -124,8 +135,11 @@ public void homeBolsaCompra () {
 	// Configuracion de reporte.
 	test = extent.startTest("Reporte Bolsa Compra", "Prueba 01");
 	test.log(LogStatus.INFO, "Ingreso Home-BolsaCompra.-");
-		
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando	
 	System.out.println("Prueba de Ingreso Correcto a Home-BolsaCompra");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Home
 	Home compra = new Home (driver, test, TAKE_SS, WAIT);
 	compra.homeBolsaCompra(subDir);	
 	
@@ -138,8 +152,11 @@ public void homeSolicitudes () {
 	// Configuracion de reporte.
 	test = extent.startTest("Reporte Solicitudes", "Prueba 01");
 	test.log(LogStatus.INFO, "Ingreso Home-Solicitudes.-");
-		
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando	
 	System.out.println("Prueba de Ingreso Correcto a Home-Solicitudes");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Home
 	Home solicitud = new Home (driver, test, TAKE_SS, WAIT);
 	solicitud.homeSolicitudes(subDir);	
 	
@@ -152,8 +169,11 @@ public void homeSolFinalizadas () {
 	// Configuracion de reporte.
 	test = extent.startTest("Reporte Solicitudes Finalizadas", "Prueba 01");
 	test.log(LogStatus.INFO, "Ingreso Home-Solicitudes Finalizadas.-");
-		
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando	
 	System.out.println("Prueba de Ingreso Correcto a Home-Solicitudes Finalizadas");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Home
 	Home solfinal = new Home (driver, test, TAKE_SS, WAIT);
 	solfinal.homeSolFinalizadas(subDir);	
 	
@@ -166,8 +186,11 @@ public void homeReembolso () {
 	// Configuracion de reporte.
 	test = extent.startTest("Reporte Reembolso", "Prueba 01");
 	test.log(LogStatus.INFO, "Ingreso Home-Reembolso.-");
-		
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando	
 	System.out.println("Prueba de Ingreso Correcto a Home-Reembolso");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Home
 	Home reem = new Home (driver, test, TAKE_SS, WAIT);
 	reem.homeReembolso(subDir);	
 	
@@ -180,8 +203,11 @@ public void homeCertificados () {
 	// Configuracion de reporte.
 	test = extent.startTest("Reporte Certificados", "Prueba 01");
 	test.log(LogStatus.INFO, "Ingreso Home-Certificados.-");
-		
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando	
 	System.out.println("Prueba de Ingreso Correcto a Home-Certificados");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Home
 	Home doc = new Home (driver, test, TAKE_SS, WAIT);
 	doc.homeCertificados(subDir);	
 	
@@ -194,8 +220,11 @@ public void homeBonos () {
 	// Configuracion de reporte.
 	test = extent.startTest("Reporte Bonos", "Prueba 01");
 	test.log(LogStatus.INFO, "Ingreso Home-Bonos.-");
-		
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando	
 	System.out.println("Prueba de Ingreso Correcto a Home-Bonos");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Home
 	Home bono = new Home (driver, test, TAKE_SS, WAIT);
 	bono.homeBonos(subDir);	
 	
@@ -208,8 +237,10 @@ public void homeTeOrientamos () {
 	// Configuracion de reporte.
 	test = extent.startTest("Reporte Te Orientamos", "Prueba 01");
 	test.log(LogStatus.INFO, "Ingreso Home-Te Orientamos.-");
-		
+	//Print en Consola para visualizar prueba que se esta ejecutando	
 	System.out.println("Prueba de Ingreso Correcto a Home-Te Orientamos");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Home
 	Home orientar = new Home (driver, test, TAKE_SS, WAIT);
 	orientar.homeTeOrientamos(subDir);	
 	
@@ -223,9 +254,114 @@ public void homeMenu () {
 	test = extent.startTest("Reporte Ingreso Menu Lateral");
 	test.log(LogStatus.INFO, "Ingreso Home-Menu Lateral.-");
 	
+	//Print en Consola para visualizar prueba que se esta ejecutando
 	System.out.println("Prueba de Ingreso correcto a Menú Lateral de App Consalud");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Home Menu
 	MenuConsalud menu = new MenuConsalud (driver, test, TAKE_SS, WAIT);
 	menu.homeMenu(subDir);	
+	
+	}
+
+@Test
+public void menuMiContrato () {
+	String subDir = SUBDIR + Thread.currentThread().getStackTrace()[1].getMethodName();
+	
+	// Configuracion de reporte.
+	test = extent.startTest("Reporte Ingreso Menu Lateral Mi Contrato", "Mi Contrato");
+	test.log(LogStatus.INFO, "Ingreso Menu Lateral Mi Contrato.-");
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando
+	System.out.println("Prueba de Ingreso correcto a Menú Lateral Mi Contrato de App Consalud");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Menu Consalud
+	MenuConsalud contrato = new MenuConsalud (driver, test, TAKE_SS, WAIT);
+	contrato.menuMiContrato(subDir);	
+	
+	}
+
+@Test
+public void menuMisBeneficios () {
+	String subDir = SUBDIR + Thread.currentThread().getStackTrace()[1].getMethodName();
+	
+	// Configuracion de reporte.
+	test = extent.startTest("Reporte Ingreso Menu Mis Beneficios", "Mis Beneficios");
+	test.log(LogStatus.INFO, "Ingreso Home-Menu Lateral Mis Beneficios.-");
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando
+	System.out.println("Prueba de Ingreso correcto a Menú Lateral Mis Beneficios de App Consalud");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Menu Consalud
+	MenuConsalud beneficios = new MenuConsalud (driver, test, TAKE_SS, WAIT);
+	beneficios.menuMisBeneficios(subDir);	
+	
+	}
+
+@Test
+public void menuReembolso () {
+	String subDir = SUBDIR + Thread.currentThread().getStackTrace()[1].getMethodName();
+	
+	// Configuracion de reporte.
+	test = extent.startTest("Reporte Ingreso Menu Reembolso", "Reembolso");
+	test.log(LogStatus.INFO, "Ingreso Home-Menu Lateral Reembolso.-");
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando
+	System.out.println("Prueba de Ingreso correcto a Menú Lateral Reembolso de App Consalud");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Menu Consalud
+	MenuConsalud reem = new MenuConsalud (driver, test, TAKE_SS, WAIT);
+	reem.menuReembolso(subDir);	
+	
+	}
+
+@Test
+public void menuCertificados () {
+	String subDir = SUBDIR + Thread.currentThread().getStackTrace()[1].getMethodName();
+	
+	// Configuracion de reporte.
+	test = extent.startTest("Reporte Ingreso Menu Certificados", "Certificados");
+	test.log(LogStatus.INFO, "Ingreso Home-Menu Lateral Certificados.-");
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando
+	System.out.println("Prueba de Ingreso correcto a Menú Lateral Certificados de App Consalud");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Menu Consalud
+	MenuConsalud certi = new MenuConsalud (driver, test, TAKE_SS, WAIT);
+	certi.menuCertificados(subDir);	
+	
+	}
+
+@Test
+public void menuBonos () {
+	String subDir = SUBDIR + Thread.currentThread().getStackTrace()[1].getMethodName();
+	
+	// Configuracion de reporte.
+	test = extent.startTest("Reporte Ingreso Menu Bonos", "Bonos");
+	test.log(LogStatus.INFO, "Ingreso Home-Menu Lateral Bonos.-");
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando
+	System.out.println("Prueba de Ingreso correcto a Menú Lateral Bonos de App Consalud");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Menu Consalud
+	MenuConsalud bono = new MenuConsalud (driver, test, TAKE_SS, WAIT);
+	bono.menuBonos(subDir);	
+	
+	}
+
+@Test
+public void menuTeOrientamos () {
+	String subDir = SUBDIR + Thread.currentThread().getStackTrace()[1].getMethodName();
+	
+	// Configuracion de reporte.
+	test = extent.startTest("Reporte Ingreso Menu Te Orientamos", "Te Orientamos");
+	test.log(LogStatus.INFO, "Ingreso Home-Menu Lateral Te Orientamos.-");
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando
+	System.out.println("Prueba de Ingreso correcto a Menú Lateral Te Orientamos de App Consalud");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Menu Consalud
+	MenuConsalud orienta = new MenuConsalud (driver, test, TAKE_SS, WAIT);
+	orienta.menuTeOrientamos(subDir);	
 	
 	}
 

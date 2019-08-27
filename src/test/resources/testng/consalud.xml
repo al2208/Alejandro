@@ -29,17 +29,23 @@
 						 
 				<methods>
 					
-					<include name="loginConsalud" /> 
+						<include name="loginConsalud" /> 
 					<!--<include name="homeExcedentes" />--> 
 					<!--<include name="homeNotificaciones" />-->
 					<!--<include name="homeBolsaCompra" />-->
 					<!--<include name="homeSolicitudes" />-->
 					<!--<include name="homeSolFinalizadas" />-->
-					<!--<include name="homeReembolso" /> -->
-					<!--<include name="homeCertificados" /> --> 
-					<!--<include name="homeBonos" /> -->
-					<!--<include name="homeTeOrientamos" />  -->
-					<include name="homeMenu" />
+					<!--<include name="homeReembolso" />-->
+					<!--<include name="homeCertificados" />--> 
+					<!--<include name="homeBonos" />-->
+					<!--<include name="homeTeOrientamos" />-->
+					<!--<include name="homeMenu" />-->
+					<!--<include name="menuMiContrato" />-->
+					<!--<include name="menuMisBeneficios" />-->
+						<include name="menuReembolso" />
+						<include name="menuCertificados" />
+						<include name="menuBonos" />
+						<include name="menuTeOrientamos" />
 				</methods>
 			</class>
 		</classes>
