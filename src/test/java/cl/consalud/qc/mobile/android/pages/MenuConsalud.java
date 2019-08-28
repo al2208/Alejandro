@@ -1,5 +1,7 @@
 package cl.consalud.qc.mobile.android.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import com.relevantcodes.extentreports.ExtentTest;
 import cl.consalud.qc.mobile.android.helpers.MobilePage;
@@ -7,8 +9,10 @@ import cl.consalud.qc.mobile.android.helpers.Helper;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
+
 public class MenuConsalud extends MobilePage {
 
+	
 	
 	private By ingresoMenu;
 	private By volverHome;
@@ -48,6 +52,8 @@ public void homeMenu (String subDir) {
 	
 	}
 
+
+
 public void menuMiContrato (String subDir) {
 	
 	//Click para ingresara Menú Lateral de APP Consalud
@@ -62,7 +68,12 @@ public void menuMiContrato (String subDir) {
 	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para Ingresar a Menu Mi Contrato", subDir, "Contra 02_APPC-02");
 	Helper.waitSeconds(2);
 	
+	
+	
+	
 	}
+
+
 
 public void menuMisBeneficios (String subDir) {
 	

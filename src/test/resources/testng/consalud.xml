@@ -40,12 +40,12 @@
 					<!--<include name="homeBonos" />-->
 					<!--<include name="homeTeOrientamos" />-->
 					<!--<include name="homeMenu" />-->
-					<!--<include name="menuMiContrato" />-->
+					<include name="menuMiContrato" />
 					<!--<include name="menuMisBeneficios" />-->
-						<include name="menuReembolso" />
-						<include name="menuCertificados" />
-						<include name="menuBonos" />
-						<include name="menuTeOrientamos" />
+					<!--<include name="menuReembolso" />-->
+					<!--<include name="menuCertificados" />-->
+					<!--<include name="menuBonos" />-->
+					<!--<include name="menuTeOrientamos" />-->
 				</methods>
 			</class>
 		</classes>

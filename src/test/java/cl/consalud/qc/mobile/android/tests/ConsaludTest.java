@@ -15,7 +15,6 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 import cl.consalud.qc.mobile.android.pages.Home;
 import cl.consalud.qc.mobile.android.pages.LoginConsalud;
 import cl.consalud.qc.mobile.android.pages.MenuConsalud;
@@ -23,6 +22,8 @@ import cl.consalud.qc.mobile.android.vo.ConsaludVO;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
+
+
 
 
 
