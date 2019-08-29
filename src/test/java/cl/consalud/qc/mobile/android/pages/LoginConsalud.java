@@ -1,7 +1,6 @@
 package cl.consalud.qc.mobile.android.pages;
 
 import org.openqa.selenium.By;
-import org.testng.Assert;
 import com.relevantcodes.extentreports.ExtentTest;
 import cl.consalud.qc.mobile.android.helpers.MobilePage;
 import cl.consalud.qc.mobile.android.helpers.Helper;
