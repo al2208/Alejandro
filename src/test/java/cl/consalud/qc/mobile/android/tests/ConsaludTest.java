@@ -18,6 +18,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import cl.consalud.qc.mobile.android.pages.Home;
 import cl.consalud.qc.mobile.android.pages.LoginConsalud;
 import cl.consalud.qc.mobile.android.pages.MenuConsalud;
+import cl.consalud.qc.mobile.android.pages.MiContrato;
 import cl.consalud.qc.mobile.android.vo.ConsaludVO;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -278,6 +279,39 @@ public void menuMiContrato () {
 	//Instrucción para llamar a ejecutar prueba desde la clase Menu Consalud
 	MenuConsalud contrato = new MenuConsalud (driver, test, TAKE_SS, WAIT);
 	contrato.menuMiContrato(subDir);	
+	
+	}
+@Test
+public void miContrato () {
+	String subDir = SUBDIR + Thread.currentThread().getStackTrace()[1].getMethodName();
+	
+	// Configuracion de reporte.
+	test = extent.startTest("Reporte Ingreso Menu Lateral Mi Contrato", "Mi Contrato");
+	test.log(LogStatus.INFO, "Ingreso Menu Lateral Mi Contrato.-");
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando
+	System.out.println("Prueba de Ingreso correcto a Menú Lateral Mi Contrato de App Consalud");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Menu Consalud
+	MiContrato contenido = new MiContrato (driver, test, TAKE_SS, WAIT);
+	contenido.miContrato(subDir);	
+	
+	}
+
+@Test
+public void misComplementos () {
+	String subDir = SUBDIR + Thread.currentThread().getStackTrace()[1].getMethodName();
+	
+	// Configuracion de reporte.
+	test = extent.startTest("Reporte Ingreso Menu Lateral Mi Contrato", "Mi Contrato");
+	test.log(LogStatus.INFO, "Ingreso Menu Lateral Mi Contrato.-");
+	
+	//Print en Consola para visualizar prueba que se esta ejecutando
+	System.out.println("Prueba de Ingreso correcto a Mi Contrato de App Consalud");
+	
+	//Instrucción para llamar a ejecutar prueba desde la clase Menu Consalud
+	MiContrato contenido = new MiContrato (driver, test, TAKE_SS, WAIT);
+	contenido.misComplementos(subDir);	
 	
 	}
 

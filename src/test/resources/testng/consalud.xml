@@ -41,6 +41,8 @@
 					<!--<include name="homeTeOrientamos" />-->
 					<!--<include name="homeMenu" />-->
 					<include name="menuMiContrato" />
+					<!--<include name="miContrato" />-->
+					<include name="misComplementos" />
 					<!--<include name="menuMisBeneficios" />-->
 					<!--<include name="menuReembolso" />-->
 					<!--<include name="menuCertificados" />-->
