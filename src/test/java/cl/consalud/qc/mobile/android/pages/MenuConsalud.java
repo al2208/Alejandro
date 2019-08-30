@@ -4,6 +4,8 @@ package cl.consalud.qc.mobile.android.pages;
 import java.util.HashMap;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+
 import com.relevantcodes.extentreports.ExtentTest;
 import cl.consalud.qc.mobile.android.helpers.MobilePage;
 import cl.consalud.qc.mobile.android.helpers.Helper;
@@ -27,6 +29,8 @@ public class MenuConsalud extends MobilePage {
 	private By ingresoMenuCertificados;
 	private By ingresoMenuBonos;
 	private By ingresoMenuTeOrientamos;
+	private By ingresoSalud;
+	private By volverMiContrato;
 	
 
 public MenuConsalud (AndroidDriver<AndroidElement> driver, ExtentTest test, Boolean TAKE_SS, int seconds) {
@@ -40,6 +44,8 @@ public MenuConsalud (AndroidDriver<AndroidElement> driver, ExtentTest test, Bool
 	this.ingresoMenuCertificados = By.xpath("//*[@text='Certificados']");
 	this.ingresoMenuBonos = By.xpath("//*[@text='Bonos']");
 	this.ingresoMenuTeOrientamos = By.xpath("//*[@text='Te Orientamos']");
+	this.ingresoSalud = By.xpath("//*[@text='eye']");
+	this.volverMiContrato = By.xpath("//*[@id='ACEPTAR']");
 	
 	}
 
@@ -74,6 +80,20 @@ public void menuMiContrato (String subDir){
 	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para Ingresar a Menu Mi Contrato", subDir, "Contra 02_APPC-02");
 	Helper.waitSeconds(10);
 
+	//Ingreso a Plan de Salud
+	driver.findElement(ingresoSalud).click();
+	Helper.waitSeconds(3);
+	driver.findElement(ingresoSalud).sendKeys(Keys.ENTER);
+	Helper.waitSeconds(10);
+	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para Ingresar a Menu Mi Contrato", subDir, "Contra 03_APPC-03");
+	
+	
+//	//Volver a Mi Contrato
+//	driver.findElement(volverMiContrato).click();
+//	Helper.waitSeconds(10);
+//	Helper.addEvidence(TAKE_SS, driver, test, "AUTOCONSALUD: Click para Ingresar a Menu Mi Contrato", subDir, "Contra 03_APPC-03");
+	
+	
 	
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	HashMap<String, String> scrollObject = new HashMap<String, String>();
